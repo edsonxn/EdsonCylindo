@@ -1,5 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react';
-import './styles.css'; // Importar los estilos personalizados
+import './styles.css';
 
 
 

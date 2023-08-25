@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // Importar los estilos personalizados
+import './styles.css';
 
 
 
