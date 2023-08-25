@@ -1,4 +1,7 @@
 import React, { useRef, useLayoutEffect } from 'react';
+import './styles.css'; // Importar los estilos personalizados
+
+
 
 function CylindoViewer({ styles }) {
   const viewer = useRef(null);
