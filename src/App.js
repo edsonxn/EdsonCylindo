@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import CylindoViewer from './CylindoViewer';
+import StylePanel from './StylePanel';
 
 function App() {
+  const [styles, setStyles] = useState({
+    FABRIC: "IVORY",
+    PILLOWS: "OFF",
+    LEGS: "Dark Brown",
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex' }}>
+      <div style={{ flex: 1 }}>
+        <CylindoViewer styles={styles} />
+      </div>
+      <div style={{ flex: 1 }}>
+        <StylePanel setStyles={setStyles} />
+      </div>
     </div>
   );
 }
